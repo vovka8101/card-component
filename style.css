@@ -1,0 +1,118 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+  max-width: 1440px;
+  background: hsl(30, 38%, 92%);
+  margin: auto;
+  padding: 175px 0;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.col1 .perfume-img {
+  min-width: 300px;
+}
+
+.col1 .perfume-img img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.col2 {
+  padding: 0 30px;
+}
+
+.col2 .product-type {
+  margin-top: 33px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transform: scale(1, .8);
+  font-size: .85em;
+  letter-spacing: .3em;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 21px;
+}
+
+.col2 .title {
+  font-size: 32px;
+  font-family: 'Fraunces', serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding: 0 2px;
+  margin-bottom: 24px;
+}
+
+.col2 .description {
+  font-weight: 500;
+  line-height: 23px;
+  font-size: 14px;
+  padding: 0 2px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 29px;
+}
+
+.col2 .price {
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  margin-bottom: 29px;
+}
+
+.col2 .price .price__current-value {
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 32px;
+  margin-right: 19px;
+}
+
+.col2 .price .price__previous-value {
+  font-size: 13px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.col2 .add-to-cart {
+  padding: 16px 0;
+  margin: 0 2px;
+  font-size: 14px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.col2 .add-to-cart:hover {
+  cursor: pointer;
+  background-color: #1a4031;
+}
+
+.col2 .add-to-cart img {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 580px) {
+  .content {
+    padding: 72px 0;
+  }
+  .container {
+    flex-wrap: wrap;
+    width: 345px;
+  }
+  .col1 .perfume-img img {
+    width: 345px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+}
